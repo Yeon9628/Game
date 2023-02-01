@@ -1,7 +1,7 @@
 'use strict';
 import * as sound from './sound.js';
 
-const CARROT_SIZE = 80;
+const POTATO_SIZE = 80;
 
 export const ItemType = Object.freeze({
   potato: 'potato',
@@ -34,8 +34,8 @@ export class Field {
   _addItem(className, count, imgPath) {
     const x1 = 0;
     const y1 = 0;
-    const x2 = this.fieldRect.width - CARROT_SIZE;
-    const y2 = this.fieldRect.height - CARROT_SIZE;
+    const x2 = this.fieldRect.width - POTATO_SIZE;
+    const y2 = this.fieldRect.height - POTATO_SIZE;
     for (let i = 0; i < count; i++) {
       const item = document.createElement('img');
       item.setAttribute('class', className);
