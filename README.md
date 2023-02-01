@@ -1,5 +1,7 @@
 ### Game
 
+##### html, css, JavaScript를 이용해 간단한 게임을 만들었습니다.
+
 ![1](https://user-images.githubusercontent.com/106020653/215994939-987b6aee-3307-445c-8cbf-0abbfd69ed24.PNG)
 ##### 게임 첫 화면, ▶ 버튼을 누르면 게임이 시작합니다.
 
