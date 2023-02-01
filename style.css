@@ -1,0 +1,132 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.game {
+  width: 1000px;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  background: url(img/backgroundImg.png) center/cover no-repeat;
+}
+
+.game__header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game__stages {
+  display: flex;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #f1c18a;
+}
+
+.game__stage {
+  padding: 0 10px;
+  color: #4d4d4d;
+}
+
+.game__button {
+  width: 60px;
+  height: 60px;
+  margin-top: 8px;
+  font-size: 24px;
+  background-color: wheat;
+  border: 3px solid black;
+  transition: transform 300ms ease-in;
+}
+
+.game__button:hover {
+  transform: scale(1.1);
+}
+
+.game__timer {
+  width: 100px;
+  font-size: 32px;
+  margin-top: 8px;
+  border-radius: 18px;
+  border: 3px solid black;
+  background-color: white;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.game__score {
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 32px;
+  margin-top: 8px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: darksalmon;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.game__field {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.pop-up {
+  width: 400px;
+  height: 140px;
+  margin: auto;
+  padding: 20px;
+  display: block;
+  color: white;
+  border-radius: 20px;
+  background-color: #00000090;
+  transform: translateY(-150%);
+}
+
+.pop-up--hide {
+  display: none;
+}
+
+.pop-up__refresh {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: wheat;
+  border: 2px solid black;
+}
+
+.pop-up__message {
+  margin-top: 15px;
+  display: block;
+  font-size: 32px;
+}
+
+.potato,
+.wheat,
+.boar {
+  transition: transform 100ms ease-in;
+}
+
+.potato:hover,
+.wheat:hover,
+.boar:hover {
+  transform: scale(1.2);
+}
